@@ -28,8 +28,7 @@ After successful log-in process, it will redirect you to the next page respectiv
 // LogIn Process for student
 
     if(isset($_POST['student']) and isset($_POST['username']) and isset($_POST['password'])) {
-        $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination',
-        'vatsal', 'jain');
+        $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination','root', '');
     
     $stmt = $pdo->query("SELECT * FROM sinfo");                     // Fetching student's data from student table
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {

@@ -23,8 +23,7 @@ $dur = (minutes($_SESSION['exam_time']) + $_SESSION['exam_dur'] - minutes($now_t
 
 
 if($now_time >= $_SESSION['exam_time'] && $now_date >= $_SESSION['exam_date']) {
-$pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination',
-'pruthviraj', 'jadeja');
+$pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination','root', '');
 $title = $_SESSION['title'];
 
 

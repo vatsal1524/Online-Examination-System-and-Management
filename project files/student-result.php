@@ -5,8 +5,7 @@
 session_start();
 ?>
 <?php
-    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination',
-        'root', '');
+    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination','root', '');
     $username = $_SESSION['username'];
     echo "<h2 align='center'>Results</h2>";
     $sql = "SELECT * FROM result WHERE username = '$username'";

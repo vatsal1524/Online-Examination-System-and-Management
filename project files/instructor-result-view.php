@@ -2,8 +2,7 @@
 
 <?php
 session_start();
-    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination',
-        'root', '');
+    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination','root', '');
     $title = $_SESSION['title'];
     $sql = "SELECT * FROM result WHERE exam_title = '".$title."'";
     $stmt = $pdo->query($sql);

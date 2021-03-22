@@ -3,8 +3,7 @@
 
 <?php
 session_start();
-    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination',
-        'root', '');
+    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination','root', '');
     $username = $_SESSION['username'];
     echo "<h1 align='center'>Results</h1>";
     echo "<br>";

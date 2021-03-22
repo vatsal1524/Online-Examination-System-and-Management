@@ -26,8 +26,7 @@ session_start();
 </head>
 <body>
     <?php
-    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination',
-        'root', '');
+    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination','root', '');
 
     echo "<h3 align='center'>List of exams</h3>";
     echo "<br>";

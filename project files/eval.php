@@ -6,8 +6,7 @@ Calculated Total marks will be shown to student after submitting exam. -->
 session_start();
 
 
-    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination',
-    'root', '');
+    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=examination','root', '');
 
     $sql = "SELECT * FROM result WHERE username = '".$_SESSION['username']."' AND exam_title = '".$_SESSION['title']."'";
     $stmt = $pdo->query($sql);
